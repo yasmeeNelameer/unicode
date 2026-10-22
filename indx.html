@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Unicode | اطلب دلوقتي والدفع عند الاستلام</title>
+<meta name="description" content="Unicode: منتجات مختارة بعناية توصلك لحد بابك. اطلب دلوقتي والدفع عند الاستلام.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFF6DE;--bg2:#F6E7BF;--ink:#2A1F14;--mute:#6E5C45;--amber:#a19167;--orange:#C96F00;--line:#E4D2A6;--btn:#2A1F14;--btnt:#FFF6DE;
+color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1D160E;--bg2:#2A2016;--ink:#FFF1D0;--mute:#CDB88F;--orange:#FFB43D;--line:#473826;--btn:#FFBE1A;--btnt:#2A1F14;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1D160E;--bg2:#2A2016;--ink:#FFF1D0;--mute:#CDB88F;--orange:#FFB43D;--line:#473826;--btn:#FFBE1A;--btnt:#2A1F14;color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--ink);font-family:'Readex Pro','Segoe UI',Tahoma,sans-serif;line-height:1.8;font-size:17px}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:800;font-size:24px;text-decoration:none;letter-spacing:-.5px;direction:ltr}
+.logo i{font-style:normal;color:var(--orange)}
+nav{display:flex;gap:22px;align-items:center;font-size:15px}
+nav a{text-decoration:none;color:var(--mute)}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--btn);color:var(--btnt);padding:13px 26px;border-radius:999px;font:600 16px 'Readex Pro',sans-serif;text-decoration:none;border:0;cursor:pointer}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.hero{position:relative;overflow:hidden;padding:56px 0 72px}
+.digits{position:absolute;inset-inline:0;top:6%;text-align:center;direction:ltr;font-weight:800;font-size:clamp(150px,34vw,430px);line-height:1;color:var(--amber);opacity:.34;letter-spacing:-.04em;user-select:none;pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center}
+h1{font-size:clamp(36px,6vw,64px);line-height:1.25;font-weight:800;letter-spacing:-.5px}
+.lead{margin:18px 0 28px;color:var(--mute);max-width:30em;font-size:19px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.shot{background:#FFF6DE;border-radius:44% 56% 48% 52%/52% 44% 56% 48%;padding:28px;display:grid;place-items:center;box-shadow:0 30px 60px -30px rgba(120,70,0,.45)}
+.shot img{width:100%;max-width:380px;height:auto;mix-blend-mode:multiply;display:block}
+.tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px;color:var(--mute);font-size:14px}
+.tags span{border:1px solid var(--line);border-radius:999px;padding:3px 14px;background:var(--bg)}
+section{padding:72px 0}
+h2{font-size:clamp(28px,4vw,40px);line-height:1.3;font-weight:800;margin-bottom:10px}
+.sub{color:var(--mute);margin-bottom:38px;max-width:34em}
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:0 48px;margin-top:28px}
+.feat div{padding:22px 0;border-top:1px solid var(--line)}
+.feat h3{font-size:20px;margin-bottom:2px}
+.feat p{color:var(--mute);font-size:16px}
+.band{background:var(--amber);color:#2A1F14;padding:48px 0}
+.band .wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;text-align:center}
+.band b{display:block;font-size:clamp(34px,6vw,60px);font-weight:800;line-height:1.2}
+.band small{font-size:15px;opacity:.85}
+.order{background:var(--bg2)}
+.order .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.steps{list-style:none;padding:0}
+.steps li{display:flex;gap:14px;padding:14px 0;border-top:1px solid var(--line)}
+.steps b{flex:none;width:34px;height:34px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-size:15px}
+label{display:block;font-size:15px;margin:14px 0 4px;color:var(--mute)}
+input,select{width:100%;padding:13px 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+.form .btn{width:100%;margin-top:22px;text-align:center}
+#msg{margin-top:12px;font-size:15px;color:var(--orange);min-height:1.6em}
+details{border-top:1px solid var(--line);padding:16px 0}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:600;font-size:18px}
+details p{color:var(--mute);margin-top:8px}
+footer{border-top:1px solid var(--line);padding:36px 0 96px;color:var(--mute);font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{color:var(--ink);font-weight:600;direction:ltr;display:inline-block}
+.wa{position:fixed;inset-inline-start:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.3)}
+.wa svg{width:32px;height:32px;fill:#fff}
+@media (max-width:820px){
+nav a:not(.btn){display:none}
+.hero .wrap,.order .wrap,.feat{grid-template-columns:1fr}
+.shot{order:-1;max-width:340px;margin:0 auto}
+.band .wrap{gap:8px}
+section{padding:52px 0}
+}
+@media (prefers-reduced-motion:no-preference){.shot img{animation:fl 5s ease-in-out infinite}@keyframes fl{50%{transform:translateY(-10px) rotate(-2deg)}}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#top">Uni<i>code</i></a>
+<nav><a href="#features">المميزات</a><a href="#order">اطلب</a><a class="btn" href="#order">اطلبها دلوقتي</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero">
+<div class="digits" aria-hidden="true">U</div>
+<div class="wrap">
+<div>
+<h1>اختيارك الأحسن<br>من Unicode</h1>
+<p class="lead">منتج مختار بجودة تستاهل، والدفع عند الاستلام.</p>
+<div class="cta"><a class="btn" href="#order">اطلبها دلوقتي</a><a class="btn alt" href="#features">شوف المميزات</a></div>
+<div class="tags"><span>دفع عند الاستلام</span><span>ضمان على المنتج</span></div>
+</div>
+<div class="shot"><img src="Špionské mini sluchátko.jfif" alt="منتج Unicode"></div>
+</div>
+</div>
+
+<section id="features"><div class="wrap">
+<h2>ليه تطلب من Unicode</h2>
+<div class="feat">
+<div><h3>جودة مضمونة</h3><p>بنفحص المنتج قبل الشحن، ويوصلك في حالته الكاملة.</p></div>
+<div><h3>تصميم عملي</h3><p>شكل بسيط وأنيق يناسب استخدامك كل يوم.</p></div>
+<div><h3>سهل الاستخدام</h3><p>من أول مرة هتعرف تستخدمه من غير تعقيد.</p></div>
+<div><h3>دفع عند الاستلام</h3><p>استلم طلبك وادفع.</p></div>
+<div><h3>دعم بعد البيع</h3><p>أي استفسار أو مشكلة، كلمنا على واتساب ونساعدك.</p></div>
+</div>
+</div></section>
+
+<div class="band"><div class="wrap">
+<div><b>كاش</b><small>الدفع عند الاستلام</small></div>
+<div><b>واتساب</b><small>نرد على طلبك بسرعة</small></div>
+</div></div>
+
+<section class="order" id="order"><div class="wrap">
+<div>
+<h2>اطلبها في دقيقة</h2>
+<p class="sub">املا بياناتك وهتفتح لك رسالة واتساب جاهزة، واحنا هنكلمك نأكد الطلب.</p>
+<ol class="steps">
+<li><b>1</b><span>اكتب اسمك ورقمك.</span></li>
+<li><b>2</b><span>ابعت الرسالة على واتساب.</span></li>
+<li><b>3</b><span>نأكد معاك عند الدفع والاستلام.</span></li>
+</ol>
+</div>
+<div class="form">
+<label for="n">الاسم</label><input id="n" autocomplete="name" placeholder="اسمك بالكامل">
+<label for="p">رقم الموبايل</label><input id="p" type="tel" inputmode="tel" autocomplete="tel" placeholder="01xxxxxxxxx">
+<label for="q">الكمية</label>
+<select id="q"><option>1</option><option>2</option><option>3</option></select>
+<button class="btn" id="go" type="button">ابعت الطلب على واتساب</button>
+<p id="msg" role="status"></p>
+</div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<div><b style="color:var(--ink);font-size:20px;direction:ltr;display:inline-block">Unicode</b><br>منتجات مختارة بعناية ودقة.</div>
+<div>واتساب واتصال<br><a href="tel:+201098859291">01098859291</a></div>
+</div></footer>
+
+<a class="wa" href="https://wa.me/201098859291" target="_blank" rel="noopener" aria-label="كلمنا على واتساب">
+<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4C9.4 4 4 9 4 15.2c0 2.6 1 5 2.6 6.9L5 28l6.2-2.1c1.5.5 3 .7 4.8.7 6.6 0 12-5 12-11.2S22.6 4 16 4z"/><circle cx="11" cy="15.5" r="1.8" fill="#25D366"/><circle cx="16" cy="15.5" r="1.8" fill="#25D366"/><circle cx="21" cy="15.5" r="1.8" fill="#25D366"/></svg>
+</a>
+
+<script>
+var WA="201098859291";
+document.getElementById("go").addEventListener("click",function(){
+var n=document.getElementById("n").value.trim(),
+    p=document.getElementById("p").value.trim(),
+    q=document.getElementById("q").value,
+    m=document.getElementById("msg");
+if(!n||!p){m.textContent="اكتبي الاسم ورقم الموبايل عشان نبعت الطلب.";return}
+var t="طلب جديد من موقع Unicode\nالاسم: "+n+"\nالموبايل: "+p+"\nالكمية: "+q;
+window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(t),"_blank","noopener");
+m.textContent="تم فتح واتساب. ابعت الرسالة وهنكلمك نأكد الطلب.";
+});
+</script>
+</body>
+</html>
